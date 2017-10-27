@@ -1,4 +1,4 @@
-<h1><p align="center"> •ESET•
+<h1><p align="center"> •ABESET•
 <h2><p align="center">bad decompile version of a famous Telgram bot in °Lua°
 
 
@@ -8,8 +8,8 @@
 <h6>[• Inter line By line in Terminal ]</h6>
 <h6>[ این کد ها را وارد کنیید •)</h6>
 <pre>
-<span>git clone https://github.com/AsTaEbot/eset.git<span>
-<span>cd eset<span>
+<span>git clone https://github.com/irboy/ABESET.git<span>
+<span>cd ABESET<span>
 <span>chmod +x bot<span>
 <span>./bot install<span>
 </pre>
@@ -50,13 +50,12 @@
 <span>cd eset && unzip data.zip<span>
 
 # • Developers!
-[AsTaE_BoT](https://github.com/AsTaE_BoT)
- ([Telegram](https://telegram.me/AsTaE_Bot))
+[AsTaE_BoT](https://github.com/IRBOY)
+ ([Telegram](https://telegram.me/TEST_STOUR))
  
-[M_a_h_D_i_R_o_O](https://github.com/M_a_h_D_i_R_o_O)
- ([Telegram](https://telegram.me/M_a_h_D_i_R_o_O))
+([Telegram](https://telegram.me/IRANB0Y))
 
 ### • Our Telegram Channel:
 
-[@SShteam](https://telegram.me/SShteam)
+[@IRANIB0Y](https://telegram.me/IRANIB0Y)
 
