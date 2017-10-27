@@ -50,7 +50,7 @@
 <span>cd eset && unzip data.zip<span>
 
 # • Developers!
-[AsTaE_BoT](https://github.com/IRBOY)
+[ABESET_BoT](https://github.com/IRBOY)
  ([Telegram](https://telegram.me/TEST_STOUR))
  
 ([Telegram](https://telegram.me/IRANB0Y))
