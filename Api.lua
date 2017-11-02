@@ -91,13 +91,13 @@ print("\027[" .. color.black[1] .. ";" .. color.green[2] .. "m\n➡➡ [••ʙ
 
 print("\027[" .. color.black[1] .. ";" .. color.blue[2] .. "m\n➡➡ [••ＥＳＥＴ ＢＯＴ ＡＰＩ ＳＴＡＲＴ ＷＯＲＫ••] ▶\n\027[00m")
 
-print("\027[" .. color.white[1] .. ";" .. color.red[2] .. "m\n➡➡ [••ɪғ ɪ ᴀᴍ ᴡʜᴀᴛ ɪ ʜᴀᴠᴇ ᴀɴᴅ ɪғ ɪ ʟᴏsᴇ ᴡʜᴀᴛ ɪ ʜᴀᴠᴇ ᴡʜᴏ ᴛʜᴇɴ ᴀᴍ ɪ?]  |          [••خدایاشکرت!!••] ▶\n\027[00m")
+print("\027[" .. color.white[1] .. ";" .. color.red[2] .. "m\n➡➡ [••ɪғ ɪ ᴀᴍ ᴡʜᴀᴛ ɪ ʜᴀᴠᴇ ᴀɴᴅ ɪғ ɪ ʟᴏsᴇ ᴡʜᴀᴛ ɪ ʜᴀᴠᴇ ᴡʜᴏ ᴛʜᴇɴ ᴀᴍ ɪ?]  |          [••اگر من با داشته هایم خودم باشم با از دست دادن آنها که هستم؟••] ▶\n\027[00m")
 
-print("\027[" .. color.black[1] .. ";" .. color.yellow[2] .. "m\n➡➡ [••ربات ᴀᴘɪ ایست 🔇 فعال شُد 🚫 لطفا در گروه خود °فهرست° را ارسال کنید با تشکر••] ▶\n\027[00m")
+print("\027[" .. color.black[1] .. ";" .. color.yellow[2] .. "m\n➡➡ [••ربات ᴀᴘɪ ایست فعال شد لطفا در گروه خود °فهرست° را ارسال کنید با تشکر••] ▶\n\027[00m")
 
 print("\027[" .. color.black[1] .. ";" .. color.yellow[2] .. "m\n➡➡ [••ᴀᴘɪ ʀᴏʙᴏᴛ sᴜᴄᴄᴇssғᴜʟʟʏ ᴛᴜʀɴᴇᴅ ᴏɴ ᴘʟᴇᴀsᴇ sᴇɴᴅ ᴍᴇ ᴛʜᴇ °Menu° ɪɴ ᴍʏ ɢʀᴏᴜᴘ••] ▶\n\027[00m")
 
-print("\027[" .. color.black[1] .. ";" .. color.white[2] .. "m\n➡➡ [••ᴄʜᴀɴɴᴇʟ: @IRANIB0Y | ɪs sᴇɴᴅ ᴜᴘᴅᴇᴛᴇ ᴍᴏᴅʀɴ••] ▶\n\027[00m")
+print("\027[" .. color.black[1] .. ";" .. color.white[2] .. "m\n➡➡ [••ᴄʜᴀɴɴᴇʟ: @SShteam | ɪs sᴇɴᴅ ᴜᴘᴅᴇᴛᴇ ᴍᴏᴅʀɴ••] ▶\n\027[00m")
 
 function edit(message_id, text, keyboard)
 	local urlk = url .. "/editMessageText?&inline_message_id=" .. message_id .. "&text=" .. URL.escape(text)
@@ -332,16 +332,16 @@ local having_access = function(user_id, chat, Q_id)
   end
   if not is_ReqMenu(user_id, chat) and is_momod(user_id, chat) then
     if database:get("lang:gp:" .. chat) then
-      Canswer(Q_id, "• 🔺You Have Not Requested This Menu 🔻!")
+      Canswer(Q_id, "• You Have Not Requested This Menu !")
     else
-      Canswer(Q_id, "• 🔻شما فهرست تنظیمات را درخواست نکرده اید🔺 !")
+      Canswer(Q_id, "• شما این فهرست را درخواست نکرده اید !")
     end
   end
   if not is_momod(user_id, chat) then
     if database:get("lang:gp:" .. chat) then
-      Canswer(Q_id, "• ♦️You Do Not Have Access To Make Changes🗯 !")
+      Canswer(Q_id, "• You Do Not Have Access To Make Changes !")
     else
-      Canswer(Q_id, "• ♦️شُما به تنظیمات دسترسی ندارید🗯 !")
+      Canswer(Q_id, "• شما دسترسی به انجام تغییرات ندارید !")
     end
   end
   return var
@@ -365,58 +365,58 @@ local start = function()
               keyboard.inline_keyboard = {
                 {
                   {
-                    text = "[ ⚙️ تنظیمات گُروه ⚙️ •]",
+                    text = "[ تنظیمات گروه •]",
                     callback_data = "GroupSettingsFa:" .. chat
                   }
                 },
                 {
                   {
-                    text = "[ 👥 اطلاعات گُروه  •]",
+                    text = "[ اطلاعات گروه •]",
                     callback_data = "GroupInfoFa:" .. chat
                   }
                 },
                 {
                   {
-                    text = "[ 🌐 پُشتیبانی •]",
+                    text = "[ پشتیبانی •]",
                     callback_data = "SupportFa:" .. chat
                   }
                 },
                 {
                   {
-                    text = "[•• ⚠️ بستن فهرست ⚠️ ••]",
+                    text = "[•• بستن فهرست ••]",
                     callback_data = "ExitFa:" .. chat
                   }
                 }
               }
-              answer(Q.id, "settings", "Menu", chat, "• 🔺🔛 بخش مورد نظر خود را انتخاب کنید ™🔻 :", keyboard)
+              answer(Q.id, "settings", "Menu", chat, "• بخش مورد نظر خود را انتخاب کنید :", keyboard)
             elseif lang == "En" then
               keyboard.inline_keyboard = {
                 {
                   {
-                    text = "[• ⚙️ Grop settings ⚙️ ]",
+                    text = "[• Grop settings ]",
                     callback_data = "GroupSettingsEn:" .. chat
                   }
                 },
                 {
                   {
-                    text = "[• 👥 Group Info ]",
+                    text = "[• Group Info ]",
                     callback_data = "GroupInfoEn:" .. chat
                   }
                 },
                 {
                   {
-                    text = "[• 🌐 Support ]",
+                    text = "[• Support ]",
                     callback_data = "SupportEn:" .. chat
                   }
                 },
                 {
                   {
-                    text = "[•• ⚠️ Close List ⚠️ ••]",
+                    text = "[•• Close List ••]",
                     callback_data = "ExitEn:" .. chat
                   }
                 }
               }
-              answer(Q.id, "settings", "Menu", chat, "• 🔺🔛 Choose Your Desired Section ™🔻 :", keyboard)
+              answer(Q.id, "settings", "Menu", chat, "• Choose Your Desired Section :", keyboard)
             end
           end
         end
@@ -429,12 +429,12 @@ local start = function()
                 local hash = "bot:strict" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 💥⛓ حالت سختگیرانه ⛓💥 " .. status
+                result = "• حالت سختگیرانه " .. status
                 Q.data = "GroupModeFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -442,12 +442,12 @@ local start = function()
                 local hash = "bot:muteall" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔒 قفل کلی گُروه 🔓 " .. status
+                result = "• حالت قفل کلی گروه " .. status
                 Q.data = "GroupModeFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -455,12 +455,12 @@ local start = function()
                 local hash = "bot:cmds" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔹 حالت عدم جواب 🔸 " .. status
+                result = "• حالت عدم جواب " .. status
                 Q.data = "GroupModeFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -468,15 +468,15 @@ local start = function()
                 local hash = "bot:muteall:Time" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 elseif database:get("bot:muteall:start" .. chat) and database:get("bot:muteall:stop" .. chat) then
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 else
-                  Canswer(Q.id, "• 🔺🔛 ابتدا با دستور Settime قفل خودکار را تنظیم نمایید  ™🔻!")
+                  Canswer(Q.id, "• ابتدا با دستور Settime قفل خودکار را تنظیم نمایید !")
                 end
                 if status then
-                  result = "• 🗯 حالت قُفل خودکار 💭 " .. status
+                  result = "• حالت قفل خودکار " .. status
                   Q.data = "GroupModeFa:" .. chat
                   Canswer(Q.id, result)
                 end
@@ -485,12 +485,12 @@ local start = function()
                 local hash = "bot:spam:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔇 قفل اسپم 🗯 " .. status
+                result = "• قفل اسپم " .. status
                 Q.data = "GroupCentPageOneFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -498,12 +498,12 @@ local start = function()
                 local hash = "bot:links:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "•🔻🔛 قفل لینک 🔛🔺 " .. status
+                result = "• قفل لیتک " .. status
                 Q.data = "GroupCentPageOneFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -511,12 +511,12 @@ local start = function()
                 local hash = "bot:webpage:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل صفحات وب🔛🔺 " .. status
+                result = "• قفل آدرس اینترنتی " .. status
                 Q.data = "GroupCentPageOneFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -524,12 +524,12 @@ local start = function()
                 local hash = "tags:lock" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل تگ🔛🔺 " .. status
+                result = "• قفل تگ " .. status
                 Q.data = "GroupCentPageOneFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -537,12 +537,12 @@ local start = function()
                 local hash = "bot:hashtag:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "•🔻🔛 قفل هشتگ🔛🔺 " .. status
+                result = "• قفل هشتگ " .. status
                 Q.data = "GroupCentPageOneFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -550,12 +550,12 @@ local start = function()
                 local hash = "bot:forward:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل فروارد🔛🔺 " .. status
+                result = "• قفل فروارد " .. status
                 Q.data = "GroupCentPageOneFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -563,12 +563,12 @@ local start = function()
                 local hash = "bot:duplipost:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل پست تکراری🔛🔺 " .. status
+                result = "• قفل پست تکراری " .. status
                 Q.data = "GroupCentPageOneFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -576,12 +576,12 @@ local start = function()
                 local hash = "bot:bots:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل  ربات🔛🔺 " .. status
+                result = "• قفل ربات " .. status
                 Q.data = "GroupCentPageOneFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -589,12 +589,12 @@ local start = function()
                 local hash = "editmsg" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل  ویرایش🔛🔺 " .. status
+                result = "• قفل ویرایش " .. status
                 Q.data = "GroupCentPageOneFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -602,12 +602,12 @@ local start = function()
                 local hash = "bot:pin:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل  سنجاق🔛🔺 " .. status
+                result = "• قفل سنجاق " .. status
                 Q.data = "GroupCentPageTwoFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -615,12 +615,12 @@ local start = function()
                 local hash = "bot:inline:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل  اینلاین🔛🔺 " .. status
+                result = "• قفل دکمه شیشه ای " .. status
                 Q.data = "GroupCentPageTwoFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -628,12 +628,12 @@ local start = function()
                 local hash = "bot:arabic:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل  نوشتار🇮🇷🔛🔺 " .. status
+                result = "• قفل نوشتار فارسی " .. status
                 Q.data = "GroupCentPageTwoFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -641,12 +641,12 @@ local start = function()
                 local hash = "bot:english:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل  نوشتار🇦🇺🔛🔺 " .. status
+                result = "• قفل نوشتار انگلیسی " .. status
                 Q.data = "GroupCentPageTwoFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -654,12 +654,12 @@ local start = function()
                 local hash = "markdown:lock" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل  نشانه گذاری🔛🔺 " .. status
+                result = "• قفل مدل نشانه گذاری " .. status
                 Q.data = "GroupCentPageTwoFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -667,12 +667,12 @@ local start = function()
                 local hash = "post:lock" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل پست🔛🔺 " .. status
+                result = "• قفل پست " .. status
                 Q.data = "GroupCentPageTwoFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -680,12 +680,12 @@ local start = function()
                 local hash = "Game:lock" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل 🎮🔛🔺 " .. status
+                result = "• قفل بازی " .. status
                 Q.data = "GroupCentPageTwoFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -693,12 +693,12 @@ local start = function()
                 local hash = "bot:member:lock" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل ورود اعضا🔛🔺 " .. status
+                result = "• قفل ورود عضو جدید " .. status
                 Q.data = "GroupCentPageTwoFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -706,12 +706,12 @@ local start = function()
                 local hash = "bot:tgservice:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل سرویس تلگرام🔛🔺 " .. status
+                result = "• قفل سرویس تلگرام " .. status
                 Q.data = "GroupCentPageTwoFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -719,12 +719,12 @@ local start = function()
                 local hash = "anti-flood:" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل فلود🔛🔺" .. status
+                result = "• قفل فلود " .. status
                 Q.data = "GroupCentPageThreeFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -732,12 +732,12 @@ local start = function()
                 local hash = "bot:text:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل متن🔛🔺 " .. status
+                result = "• قفل متن " .. status
                 Q.data = "GroupMediaFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -745,12 +745,12 @@ local start = function()
                 local hash = "bot:photo:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل عکس🔛🔺 " .. status
+                result = "• قفل عکس " .. status
                 Q.data = "GroupMediaFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -758,12 +758,12 @@ local start = function()
                 local hash = "bot:video:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل فیلم🔛🔺 " .. status
+                result = "• قفل فیلم " .. status
                 Q.data = "GroupMediaFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -771,12 +771,12 @@ local start = function()
                 local hash = "bot:selfvideo:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل سلفی🔛🔺 " .. status
+                result = "• قفل فیلم سلفی " .. status
                 Q.data = "GroupMediaFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -784,12 +784,12 @@ local start = function()
                 local hash = "bot:music:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل آهنگ🔛🔺 " .. status
+                result = "• قفل آهنگ " .. status
                 Q.data = "GroupMediaFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -797,12 +797,12 @@ local start = function()
                 local hash = "bot:voice:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل ویس🔛🔺 " .. status
+                result = "• قفل ویس " .. status
                 Q.data = "GroupMediaFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -810,12 +810,12 @@ local start = function()
                 local hash = "bot:document:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل فایل🔛🔺 " .. status
+                result = "• قفل فایل " .. status
                 Q.data = "GroupMediaFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -823,12 +823,12 @@ local start = function()
                 local hash = "bot:sticker:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل استیکر🔛🔺 " .. status
+                result = "• قفل استیکر " .. status
                 Q.data = "GroupMediaFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -836,12 +836,12 @@ local start = function()
                 local hash = "bot:gifs:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل گیف🔛🔺 " .. status
+                result = "• قفل گیف " .. status
                 Q.data = "GroupMediaFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -849,12 +849,12 @@ local start = function()
                 local hash = "bot:contact:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل مخاطب🔛🔺 " .. status
+                result = "• قفل مخاطبین " .. status
                 Q.data = "GroupMediaFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -862,12 +862,12 @@ local start = function()
                 local hash = "bot:location:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔊 غیرفعال شُد ✅ !"
+                  status = "غیرفعال شد !"
                 else
                   database:set(hash, true)
-                  status = "🔇 فعال شُد 🚫 !"
+                  status = "فعال شد !"
                 end
-                result = "• 🔻🔛 قفل موقعیت مکانی🔛🔺 " .. status
+                result = "• قفل موقعیت مکانی " .. status
                 Q.data = "GroupMediaFa:" .. chat
                 Canswer(Q.id, result)
               end
@@ -876,10 +876,10 @@ local start = function()
                 local hash = "bot:spam:mute" .. chat
                 if database:get(hash) then
                   database:del(hash)
-                  status = "🔻🔛Has Been Disabled 🔛🔺"
+                  status = "Has Been Disabled"
                 else
                   database:set(hash, true)
-                  status = "🔻🔛Has Been Activated🔛🔺 !"
+                  status = "Has Been Activated !"
                 end
                 result = "• Lock Spam " .. status
                 Q.data = "GroupCentPageOneEn:" .. chat
