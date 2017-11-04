@@ -47,7 +47,7 @@
 
 <h4> <strong>[• برای درست کردن امکانات فان دستورات زیر را بزنید ]<br></strong>
 
-<span>cd eset && unzip data.zip<span>
+<span>cd ABESET && unzip data.zip<span>
 
 # • Developers!
 [ABESET_BoT](https://github.com/IRBOY)
