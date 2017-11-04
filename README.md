@@ -36,13 +36,13 @@
 <span>killall screen<span>
 <span>&& killall bash<span>
 <span>&& killalll tmux<span>
-<span>&& cd eset<span>
+<span>&& cd ABESET<span>
 <span>&& screen ./bot cli<span>
 
 <h4> <strong>[• ترمینال جدید دیگری را باز کرده و این دستورات را بزنید ]<br></strong>
 
 
-<span>cd eset<span>
+<span>cd ABESET<span>
 <span>&& screen ./bot api<span>
 
 <h4> <strong>[• برای درست کردن امکانات فان دستورات زیر را بزنید ]<br></strong>
